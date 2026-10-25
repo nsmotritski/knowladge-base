@@ -1,0 +1,45 @@
+{
+  "id": "uncertainty",
+  "en": {
+    "title": "Uncertainty",
+    "heading": "Separate facts, inference and unknowns.",
+    "lead": "A plausible answer is not evidence. Preserve disagreements, missing coverage and source limitations through synthesis.",
+    "flow": [
+      "Claim",
+      "Evidence check",
+      "Fact / inference / unknown",
+      "Research or disclose"
+    ],
+    "sections": [
+      [
+        "Make uncertainty actionable",
+        "“Refresh behavior unknown” is useful only with the affected API, missing scenario and attempted sources. Ask a focused follow-up or perform targeted research when it can change the answer."
+      ],
+      [
+        "Do not hide contradictions",
+        "Compare date, version, authority and scope before resolving conflicting sources. If unresolved, show both positions and explain the limitation. Numeric confidence without calibration is not proof."
+      ]
+    ]
+  },
+  "ru": {
+    "title": "Неопределённость",
+    "heading": "Отделяйте факты от предположений.",
+    "lead": "Правдоподобный ответ не равен доказательству. Сохраняйте разногласия, пробелы и ограничения источников при синтезе.",
+    "flow": [
+      "Утверждение",
+      "Проверка",
+      "Факт / вывод / неизвестно",
+      "Искать или сообщить"
+    ],
+    "sections": [
+      [
+        "Сделайте пробел конкретным",
+        "«Поведение refresh неизвестно» дополните названием API, отсутствующим сценарием и проверенными источниками. Уточните вопрос или проведите поиск, если это повлияет на ответ."
+      ],
+      [
+        "Не скрывайте противоречия",
+        "Сравните дату, версию, авторитетность и область применимости источников. Неразрешённый конфликт покажите явно. Число уверенности без калибровки не является доказательством."
+      ]
+    ]
+  }
+}

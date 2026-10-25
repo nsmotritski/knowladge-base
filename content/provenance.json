@@ -1,0 +1,45 @@
+{
+  "id": "provenance",
+  "en": {
+    "title": "Citations & provenance",
+    "heading": "Keep evidence attached to every claim.",
+    "lead": "Provenance is the trace from a conclusion to the source and supporting passage. Citations should survive every merge and summary.",
+    "flow": [
+      "Claim + source + passage",
+      "Structured findings",
+      "Merge with IDs",
+      "Verify final citations"
+    ],
+    "sections": [
+      [
+        "Question #9 · diagnosis: A",
+        "Synthesis loses attribution even though upstream agents cite sources. Require structured claim–source mappings and preserve them during merging. Reconstructing attribution from transcripts or semantic similarity later is more fragile."
+      ],
+      [
+        "A minimal evidence record",
+        "Use claim_id, claim, source_id, URL, section or passage, retrieval date and limitations. When deduplicating claims, keep all supporting and contradicting evidence. A citation check verifies support; it cannot make an unsupported claim true."
+      ]
+    ]
+  },
+  "ru": {
+    "title": "Цитаты и происхождение",
+    "heading": "Сохраняйте источник утверждения.",
+    "lead": "Происхождение — путь от вывода к источнику и подтверждающему фрагменту. Ссылки должны сохраняться при объединении и сокращении.",
+    "flow": [
+      "Тезис + источник + фрагмент",
+      "Структурированный результат",
+      "Объединение с ID",
+      "Проверка ссылок"
+    ],
+    "sections": [
+      [
+        "Вопрос №9 · разбор: A",
+        "При синтезе теряются ссылки, хотя входные агенты их указали. Требуйте структурированные связи тезисов и источников и сохраняйте их при объединении. Восстановление по логам или смысловому сходству менее надёжно."
+      ],
+      [
+        "Минимальная запись",
+        "claim_id, тезис, source_id, URL, раздел или фрагмент, дата получения и ограничения. При объединении дублей сохраняйте подтверждающие и противоречащие данные. Проверка цитат не превращает неподтверждённый тезис в факт."
+      ]
+    ]
+  }
+}

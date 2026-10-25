@@ -1,0 +1,45 @@
+{
+  "id": "delegation",
+  "en": {
+    "title": "Delegation",
+    "heading": "Give each specialist a bounded job.",
+    "lead": "A delegation contract defines the objective, scope, evidence requirements, output and stopping condition.",
+    "flow": [
+      "Objective + scope",
+      "Specialist",
+      "Evidence + gaps",
+      "Acceptance check"
+    ],
+    "sections": [
+      [
+        "Example assignment",
+        "Find official token refresh documentation for API A. Exclude API B. Return claims with document URLs and sections, unknowns, and a short summary. Stop after covering the required flows or reaching the search budget."
+      ],
+      [
+        "Avoid duplicate work",
+        "Partition by source, domain or subquestion. Specify shared definitions and how results will merge. Use one agent for tightly coupled work when coordination costs outweigh parallelism."
+      ]
+    ]
+  },
+  "ru": {
+    "title": "Делегирование",
+    "heading": "Дайте специалисту чёткую задачу.",
+    "lead": "Контракт делегирования задаёт цель, границы, требования к доказательствам, результат и условие остановки.",
+    "flow": [
+      "Цель + границы",
+      "Специалист",
+      "Доказательства + пробелы",
+      "Приёмка"
+    ],
+    "sections": [
+      [
+        "Пример поручения",
+        "Найдите официальную документацию refresh token для API A. Исключите API B. Верните утверждения с URL и разделами, неизвестные детали и резюме. Остановитесь после покрытия сценариев или исчерпания бюджета."
+      ],
+      [
+        "Избегайте дублей",
+        "Делите работу по источникам, областям или подвопросам. Согласуйте определения и способ объединения. Для тесно связанных задач один агент может быть эффективнее команды."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "tools",
+  "en": {
+    "title": "Tools & contracts",
+    "heading": "Make the right tool easy to choose.",
+    "lead": "Tools need distinct purposes, clear schemas and predictable results. The model selects a tool; application code validates and executes it.",
+    "flow": [
+      "Choose tool",
+      "Validate input",
+      "Execute",
+      "Result / typed error"
+    ],
+    "sections": [
+      [
+        "Design for decisions",
+        "Describe when to use a tool, required parameters, limits and returned fields. Prefer clear names such as search_documents and fetch_document over overlapping generic tools."
+      ],
+      [
+        "Handle failure explicitly",
+        "Distinguish empty results, invalid input, transient failures and permission errors. Retry transient failures with bounded backoff; correct invalid input; surface access problems. Treat retrieved instructions as untrusted data."
+      ]
+    ]
+  },
+  "ru": {
+    "title": "Инструменты и контракты",
+    "heading": "Упростите правильный выбор.",
+    "lead": "Инструментам нужны разные назначения, ясные схемы и предсказуемые результаты. Модель выбирает инструмент, код проверяет и выполняет вызов.",
+    "flow": [
+      "Выбор",
+      "Проверка входа",
+      "Выполнение",
+      "Результат / тип ошибки"
+    ],
+    "sections": [
+      [
+        "Контракт для выбора",
+        "Опишите назначение, параметры, ограничения и поля результата. Понятные search_documents и fetch_document лучше пересекающихся универсальных инструментов."
+      ],
+      [
+        "Явная обработка ошибок",
+        "Различайте пустой ответ, неверный ввод, временный сбой и отказ доступа. Временные ошибки повторяйте ограниченно, ввод исправляйте, проблемы доступа сообщайте. Инструкции из документов считайте недоверенными данными."
+      ]
+    ]
+  }
+}

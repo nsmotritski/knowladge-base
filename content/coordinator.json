@@ -1,0 +1,45 @@
+{
+  "id": "coordinator",
+  "en": {
+    "title": "Coordinator & subagents",
+    "heading": "One plan. Distinct responsibilities.",
+    "lead": "The coordinator decomposes work, delegates bounded tasks, checks results and decides what happens next. Specialists execute within their assigned scope.",
+    "flow": [
+      "User goal",
+      "Coordinator",
+      "Search + analysis",
+      "Coordinator → synthesis"
+    ],
+    "sections": [
+      [
+        "Own the workflow",
+        "Keep routing, acceptance criteria and stopping decisions in the coordinator. A search agent returns evidence; it does not silently redefine the user’s goal."
+      ],
+      [
+        "Parallelize independent work",
+        "Search different APIs in parallel, then join the results. If analysis depends on retrieved documents, wait for those inputs. Extra agents increase cost and coordination overhead."
+      ]
+    ]
+  },
+  "ru": {
+    "title": "Координатор и подагенты",
+    "heading": "Один план. Разные роли.",
+    "lead": "Координатор разбивает работу, делегирует ограниченные задачи, проверяет результаты и выбирает следующий шаг. Специалисты работают в заданных границах.",
+    "flow": [
+      "Цель",
+      "Координатор",
+      "Поиск + анализ",
+      "Координатор → синтез"
+    ],
+    "sections": [
+      [
+        "Управляйте процессом",
+        "Маршрутизация, критерии приёмки и остановка принадлежат координатору. Поисковый агент возвращает доказательства, а не меняет цель пользователя."
+      ],
+      [
+        "Распараллеливайте независимое",
+        "Разные API можно исследовать параллельно, затем объединить результаты. Анализ документов ждёт документы. Дополнительные агенты увеличивают стоимость и сложность координации."
+      ]
+    ]
+  }
+}

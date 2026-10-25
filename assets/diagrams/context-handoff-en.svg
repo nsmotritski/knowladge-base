@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="850" viewBox="0 0 1000 850" role="img" aria-labelledby="title desc" lang="en">
+<title id="title">Explicit context handoff</title><desc id="desc">The coordinator delegates search, receives results, passes those findings to document analysis, receives the analysis and continues the workflow.</desc>
+<defs><marker id="blue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#6083a0"/></marker><marker id="green" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#29866e"/></marker></defs>
+<rect x="1" y="1" width="998" height="848" rx="16" fill="#fcfbf7" stroke="#dedfd5"/>
+<g fill="none" stroke-width="3" stroke-linejoin="round">
+<path d="M390 160V320" stroke="#6083a0" marker-end="url(#blue)"/>
+<path d="M610 320V160" stroke="#29866e" marker-end="url(#green)"/>
+<path d="M760 100H920V580H760" stroke="#6083a0" marker-end="url(#blue)"/>
+<path d="M240 580H80V100H240" stroke="#29866e" marker-end="url(#green)"/>
+<path d="M500 640V740" stroke="#d1a15c" stroke-dasharray="5 7" marker-end="url(#blue)"/>
+</g>
+<g stroke-width="2"><rect x="240" y="40" width="520" height="120" rx="18" fill="#e3edf5" stroke="#90b1cb"/><rect x="240" y="320" width="520" height="120" rx="18" fill="#e5f1e9" stroke="#8ab9a4"/><rect x="240" y="520" width="520" height="120" rx="18" fill="#e5f1e9" stroke="#8ab9a4"/><rect x="190" y="740" width="620" height="75" rx="15" fill="#faf0d9" stroke="#d1ad70"/></g>
+<g font-family="Inter,Arial,sans-serif" font-size="25" text-anchor="middle" fill="#203a35"><text x="500" y="110">Coordinator Agent</text><text x="500" y="390">Web Search Agent</text><text x="500" y="590">Document Analysis Agent</text><text x="500" y="786" font-size="23">Coordinator continues workflow</text></g>
+<g font-family="Inter,Arial,sans-serif" font-size="19" font-weight="500"><text x="365" y="245" text-anchor="end" fill="#456782">1. Delegate</text><text x="635" y="245" fill="#23705c">2. Results</text><text x="895" y="490" text-anchor="end" fill="#456782">3. Pass context</text><text x="105" y="690" fill="#23705c">4. Return analysis</text></g></svg>

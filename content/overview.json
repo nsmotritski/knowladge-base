@@ -1,0 +1,47 @@
+{
+  "id": "overview",
+  "en": {
+    "title": "Start here",
+    "heading": "A field guide to reliable agents",
+    "lead": "Prepare for Claude Certified Architect – Foundations through architecture decisions, failure modes and worked examples. This independent guide covers the requested agent topics; it is not a complete exam syllabus.",
+    "flow": [
+      "Request",
+      "Coordinator",
+      "Specialists",
+      "Evidence",
+      "Answer"
+    ],
+    "sections": [
+      [
+        "One running example",
+        "Research API authentication for an integration. Search collects documents, analysis identifies gaps, and synthesis produces a supported report. Each chapter improves the same system."
+      ],
+      [
+        "Read the failure first",
+        "Ask who owns the next decision, what input they receive, and which evidence survives the handoff. A new agent is useful only if it solves a concrete coordination or context problem."
+      ]
+    ]
+  },
+  "ru": {
+    "title": "Начните здесь",
+    "heading": "Пособие по надёжным агентам",
+    "lead": "Подготовка к Claude Certified Architect – Foundations через архитектурные решения, ошибки и примеры. Это независимое пособие по указанным темам агентов, а не полная программа экзамена.",
+    "flow": [
+      "Запрос",
+      "Координатор",
+      "Специалисты",
+      "Доказательства",
+      "Ответ"
+    ],
+    "sections": [
+      [
+        "Один сквозной пример",
+        "Исследуем API-аутентификацию для интеграции. Поиск собирает документы, анализ находит пробелы, синтез готовит обоснованный отчёт. В каждой главе улучшаем ту же систему."
+      ],
+      [
+        "Начните с причины ошибки",
+        "Кто принимает следующее решение? Какие данные он получает? Какие доказательства сохраняются при передаче? Новый агент нужен для конкретной задачи координации или контекста."
+      ]
+    ]
+  }
+}

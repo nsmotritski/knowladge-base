@@ -1,0 +1,45 @@
+{
+  "id": "research",
+  "en": {
+    "title": "Iterative research",
+    "heading": "Let gaps drive the next search.",
+    "lead": "Research is a feedback loop: search, analyze, identify specific missing evidence, then search again when justified.",
+    "flow": [
+      "Search",
+      "Analyze",
+      "Report gaps",
+      "Coordinator → targeted search ↺"
+    ],
+    "sections": [
+      [
+        "Question #11 · diagnosis: B",
+        "Analysis finds that authentication is covered but token refresh is missing. Have it report specific gaps to the coordinator, which triggers targeted search and repeats analysis. This preserves the analyst’s precise diagnosis. Option C also adds a loop, but relies on the coordinator inferring gaps from general output."
+      ],
+      [
+        "Bound the loop",
+        "Track required subquestions and their evidence status. Stop when coverage is sufficient, the iteration or cost budget is reached, or no new credible evidence appears. Report unresolved gaps instead of searching forever."
+      ]
+    ]
+  },
+  "ru": {
+    "title": "Итеративное исследование",
+    "heading": "Пусть пробелы направляют поиск.",
+    "lead": "Исследование — цикл: поиск, анализ, конкретные пробелы в доказательствах и при необходимости новый поиск.",
+    "flow": [
+      "Поиск",
+      "Анализ",
+      "Список пробелов",
+      "Координатор → точечный поиск ↺"
+    ],
+    "sections": [
+      [
+        "Вопрос №11 · разбор: B",
+        "Анализ видит, что аутентификация описана, а refresh token — нет. Он передаёт конкретный пробел координатору; тот запускает точечный поиск и повторный анализ. C тоже добавляет цикл, но заставляет координатора выводить пробелы из общего текста."
+      ],
+      [
+        "Ограничьте цикл",
+        "Отслеживайте обязательные подвопросы и наличие доказательств. Остановитесь при достаточном покрытии, исчерпании бюджета или отсутствии новых надёжных данных. Сообщайте оставшиеся пробелы."
+      ]
+    ]
+  }
+}

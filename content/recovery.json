@@ -1,0 +1,45 @@
+{
+  "id": "recovery",
+  "en": {
+    "title": "State recovery",
+    "heading": "Resume from a durable checkpoint.",
+    "lead": "Conversation history is not durable workflow state. Save the plan, completed work and pending actions outside the current context.",
+    "flow": [
+      "Plan + progress",
+      "Checkpoint",
+      "Interruption",
+      "Load → validate → resume"
+    ],
+    "sections": [
+      [
+        "What to persist",
+        "Record task ID, plan version, completed subtasks, artifact references, evidence, gaps and next action. Store only necessary data with appropriate access controls."
+      ],
+      [
+        "Recover safely",
+        "Load the checkpoint and verify referenced artifacts. Reconcile any in-flight action before retrying. Use idempotency keys for side effects so a timeout does not create duplicate external actions."
+      ]
+    ]
+  },
+  "ru": {
+    "title": "Восстановление состояния",
+    "heading": "Продолжайте с сохранённой точки.",
+    "lead": "История диалога не заменяет устойчивое состояние процесса. Сохраняйте план, выполненную работу и следующие действия вне текущего контекста.",
+    "flow": [
+      "План + прогресс",
+      "Контрольная точка",
+      "Прерывание",
+      "Загрузить → проверить → продолжить"
+    ],
+    "sections": [
+      [
+        "Что сохранять",
+        "ID задачи, версию плана, завершённые подзадачи, ссылки на артефакты, доказательства, пробелы и следующий шаг. Храните нужные данные с соответствующим контролем доступа."
+      ],
+      [
+        "Безопасное восстановление",
+        "Загрузите состояние и проверьте артефакты. Уточните статус незавершённого действия перед повтором. Ключи идемпотентности предотвращают дубли внешних действий после тайм-аута."
+      ]
+    ]
+  }
+}
