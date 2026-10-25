@@ -12,7 +12,7 @@
     ],
     "sections": [
       [
-        "Question #9 · diagnosis: A",
+        "Preserve attribution during synthesis",
         "Synthesis loses attribution even though upstream agents cite sources. Require structured claim–source mappings and preserve them during merging. Reconstructing attribution from transcripts or semantic similarity later is more fragile."
       ],
       [
@@ -33,7 +33,7 @@
     ],
     "sections": [
       [
-        "Вопрос №9 · разбор: A",
+        "Сохраняйте источники при синтезе",
         "При синтезе теряются ссылки, хотя входные агенты их указали. Требуйте структурированные связи тезисов и источников и сохраняйте их при объединении. Восстановление по логам или смысловому сходству менее надёжно."
       ],
       [

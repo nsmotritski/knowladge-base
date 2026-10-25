@@ -12,7 +12,7 @@
     ],
     "sections": [
       [
-        "Question #10 · diagnosis: C",
+        "When synthesis receives no findings",
         "Synthesis says no research was provided after search and analysis completed. The missing step is including their outputs in the synthesis prompt or an explicitly accessible artifact. Sharing an API connection does not share context."
       ],
       [
@@ -40,7 +40,7 @@
     ],
     "sections": [
       [
-        "Вопрос №10 · разбор: C",
+        "Если синтез не получил результаты",
         "Синтез не получил исследование после завершения поиска и анализа. Координатор должен передать их результаты во вход синтеза или явно доступный артефакт. Общий API-коннект не создаёт общий контекст."
       ],
       [

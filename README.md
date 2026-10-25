@@ -23,7 +23,7 @@ Open http://localhost:8080. The root opens the English guide by default, without
 
 ## Content provenance
 
-Themes requested for questions #1–11 are covered. The conversation export exposes only images of #9–11; the original questions #1–8 and prior assistant explanations are unavailable. No numbering has been invented for those topics. #9 A, #10 C, #11 B are reasoned readings of supplied screenshots, not an official verified answer key.
+An independent Cloud Architect learning guide covering AI agents, coordination, context, tools and evidence. Chapters use practical examples and diagrams without test-question numbering or answer keys.
 
 Primary conceptual references:
 - https://www.anthropic.com/engineering/multi-agent-research-system

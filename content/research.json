@@ -12,8 +12,8 @@
     ],
     "sections": [
       [
-        "Question #11 · diagnosis: B",
-        "Analysis finds that authentication is covered but token refresh is missing. Have it report specific gaps to the coordinator, which triggers targeted search and repeats analysis. This preserves the analyst’s precise diagnosis. Option C also adds a loop, but relies on the coordinator inferring gaps from general output."
+        "Close the loop on missing evidence",
+        "Analysis finds that authentication is covered but token refresh is missing. Have it report specific gaps to the coordinator, which triggers targeted search and repeats analysis. Explicit gap reports preserve the analyst’s precise diagnosis and make the next search actionable."
       ],
       [
         "Bound the loop",
@@ -33,8 +33,8 @@
     ],
     "sections": [
       [
-        "Вопрос №11 · разбор: B",
-        "Анализ видит, что аутентификация описана, а refresh token — нет. Он передаёт конкретный пробел координатору; тот запускает точечный поиск и повторный анализ. C тоже добавляет цикл, но заставляет координатора выводить пробелы из общего текста."
+        "Замкните цикл поиска доказательств",
+        "Анализ видит, что аутентификация описана, а refresh token — нет. Он передаёт конкретный пробел координатору; тот запускает точечный поиск и повторный анализ. Явное описание пробелов сохраняет точный вывод аналитика и задаёт цель следующего поиска."
       ],
       [
         "Ограничьте цикл",

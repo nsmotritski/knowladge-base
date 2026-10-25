@@ -3,7 +3,7 @@
   "en": {
     "title": "Start here",
     "heading": "A field guide to reliable agents",
-    "lead": "Prepare for Claude Certified Architect – Foundations through architecture decisions, failure modes and worked examples. This independent guide covers the requested agent topics; it is not a complete exam syllabus.",
+    "lead": "Explore artificial intelligence architecture for Cloud Architect through practical explanations, diagrams and worked examples. Learn how agents coordinate, use tools, preserve context and ground their conclusions in evidence.",
     "flow": [
       "Request",
       "Coordinator",
@@ -25,7 +25,7 @@
   "ru": {
     "title": "Начните здесь",
     "heading": "Пособие по надёжным агентам",
-    "lead": "Подготовка к Claude Certified Architect – Foundations через архитектурные решения, ошибки и примеры. Это независимое пособие по указанным темам агентов, а не полная программа экзамена.",
+    "lead": "Изучайте архитектуру искусственного интеллекта для Cloud Architect через объяснения, схемы и практические примеры. Узнайте, как агенты координируют работу, используют инструменты, сохраняют контекст и обосновывают выводы.",
     "flow": [
       "Запрос",
       "Координатор",
