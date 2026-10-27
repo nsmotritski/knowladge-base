@@ -1,0 +1,87 @@
+{
+  "id": "multi-agent-architecture",
+  "en": {
+    "title": "Multi-Agent Architecture",
+    "heading": "Coordinate specialists around a shared goal.",
+    "lead": "A multi-agent architecture divides a task among distinct agents. Each agent has its own context and responsibilities; the coordinator manages dependencies, handoffs and the final result.",
+    "flow": [
+      "User goal",
+      "Coordinator plans",
+      "Specialists work",
+      "Merge → evaluate → answer"
+    ],
+    "sections": [
+      [
+        "The architecture: who does what",
+        "The coordinator owns the overall plan. Search agents gather evidence, analysis agents interpret it, and a synthesis agent combines findings. These roles are design choices: a small task may need only one agent."
+      ],
+      [
+        "Context crosses explicit boundaries",
+        "Agents do not automatically inherit one another’s findings. The coordinator must pass relevant results, constraints and claim–source mappings, or references to artifacts the receiving agent can access. The diagram shows a sequential dependency: search results must arrive before document analysis can use them."
+      ],
+      [
+        "Choose parallelism deliberately",
+        "Independent subquestions can run in parallel. Dependent steps must wait for their inputs. Define scope, acceptance criteria, budgets and failure handling before delegating; more agents bring more cost and coordination work."
+      ],
+      [
+        "Architecture versus execution loop",
+        "Multi-agent architecture describes the division of responsibility between agents. The agentic loop describes how an individual agent repeatedly chooses an action, receives a result and decides what to do next. A multi-agent system can contain many such loops."
+      ]
+    ],
+    "diagrams": [
+      {
+        "file": "context-handoff-en.svg",
+        "title": "Explicit context handoff",
+        "caption": "The coordinator delegates search, receives results, passes those findings to document analysis, receives the analysis and continues the workflow."
+      }
+    ],
+    "related": [
+      "agentic-loop",
+      "coordinator",
+      "context",
+      "delegation"
+    ]
+  },
+  "ru": {
+    "title": "Multi-Agent Architecture",
+    "heading": "Объединяйте специалистов общей целью.",
+    "lead": "Многоагентная архитектура распределяет задачу между отдельными агентами. У каждого свой контекст и обязанности; координатор управляет зависимостями, передачей данных и общим результатом.",
+    "flow": [
+      "Цель пользователя",
+      "План координатора",
+      "Работа специалистов",
+      "Объединить → оценить → ответить"
+    ],
+    "sections": [
+      [
+        "Архитектура: кто за что отвечает",
+        "Координатор ведёт общий план. Поисковые агенты собирают доказательства, аналитические интерпретируют их, агент синтеза объединяет выводы. Эти роли — проектное решение: небольшой задаче может хватить одного агента."
+      ],
+      [
+        "Контекст передаётся явно",
+        "Агенты не получают результаты друг друга автоматически. Координатор передаёт нужные данные, ограничения, связи тезисов с источниками или ссылки на доступные артефакты. На схеме показана зависимость: анализ документов использует уже полученные результаты поиска."
+      ],
+      [
+        "Осознанный параллелизм",
+        "Независимые подвопросы можно исследовать параллельно. Зависимые этапы должны дождаться входных данных. До делегирования задайте границы, критерии приёмки, бюджеты и обработку ошибок: дополнительные агенты увеличивают стоимость и сложность."
+      ],
+      [
+        "Архитектура и цикл исполнения",
+        "Multi-Agent Architecture описывает распределение ответственности между агентами. Agentic Loop описывает, как один агент выбирает действие, получает результат и решает, что делать дальше. Многоагентная система может включать множество таких циклов."
+      ]
+    ],
+    "diagrams": [
+      {
+        "file": "context-handoff-ru.svg",
+        "title": "Явная передача контекста",
+        "caption": "Координатор поручает поиск, получает результаты, передаёт их агенту анализа документов, получает анализ и продолжает работу."
+      }
+    ],
+    "related": [
+      "agentic-loop",
+      "coordinator",
+      "context",
+      "delegation"
+    ]
+  }
+}

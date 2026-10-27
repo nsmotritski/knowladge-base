@@ -20,12 +20,8 @@
         "Include objective, constraints, findings, claim–source links, unresolved gaps, and the expected output format. Verify artifact access. Summaries should preserve evidence and uncertainty, not only conclusions."
       ]
     ],
-    "diagrams": [
-      {
-        "file": "context-handoff-en.svg",
-        "title": "Explicit context handoff",
-        "caption": "The coordinator delegates search, receives results, passes those findings to document analysis, receives the analysis and continues the workflow."
-      }
+    "related": [
+      "multi-agent-architecture"
     ]
   },
   "ru": {
@@ -48,12 +44,8 @@
         "Передавайте цель, ограничения, результаты, связи утверждений с источниками, пробелы и формат ответа. Проверяйте доступ к артефактам. Резюме должно сохранять доказательства и неопределённость."
       ]
     ],
-    "diagrams": [
-      {
-        "file": "context-handoff-ru.svg",
-        "title": "Явная передача контекста",
-        "caption": "Координатор поручает поиск, получает результаты, передаёт их агенту анализа документов, получает анализ и продолжает работу."
-      }
+    "related": [
+      "multi-agent-architecture"
     ]
   }
 }

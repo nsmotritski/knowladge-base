@@ -1,0 +1,93 @@
+{
+  "id": "agentic-loop",
+  "en": {
+    "title": "Agentic Loop",
+    "heading": "Act, observe, decide — repeat when needed.",
+    "lead": "An agentic loop alternates model decisions with tool execution. Each tool result updates the context for the next decision, until the agent can answer, needs human input or reaches a defined limit.",
+    "flow": [
+      "Goal + context",
+      "Model chooses action",
+      "Application executes tool",
+      "Result → updated context ↺"
+    ],
+    "sections": [
+      [
+        "One cycle, step by step",
+        "Provide the goal, instructions, available tool schemas and current context. The model may request a tool call. Application code validates and executes that request, then returns the result. The next model call uses the updated context to choose another action or produce an answer. A tool call is not itself execution."
+      ],
+      [
+        "Worked example: refund an order",
+        "The model first chooses lookup_order. The application returns purchase_age_days: 45. The model evaluates this fact together with the applicable refund policy and exceptions. It may choose process_refund if eligible or escalate_to_human if review is required. Forty-five days alone does not establish eligibility."
+      ],
+      [
+        "Control side effects in application code",
+        "Before executing a refund, enforce authorization, policy checks and any required approval. Use idempotency for retryable actions. A model’s choice of a tool does not grant permission to execute it. Human escalation is a deliberate next action, not a failure of the loop."
+      ],
+      [
+        "Know when to stop",
+        "Stop when the goal is satisfied, a human must supply information or approval, or a step, time or cost limit is reached. Handle tool errors explicitly and avoid repeating the same unproductive action indefinitely."
+      ],
+      [
+        "One agent or many",
+        "An agent can use this loop without any subagents. In a multi-agent system, the coordinator and each specialist may run their own loops. Delegation changes who performs the work; the loop describes how that work progresses."
+      ]
+    ],
+    "diagrams": [
+      {
+        "file": "tool-use-refund-en.svg",
+        "title": "Tool use: from request to action",
+        "caption": "The model selects a tool, the application executes it and returns its result to context. The model then chooses a policy-compliant next step."
+      }
+    ],
+    "related": [
+      "multi-agent-architecture",
+      "tools",
+      "recovery"
+    ]
+  },
+  "ru": {
+    "title": "Agentic Loop",
+    "heading": "Действие, результат, решение — новый цикл.",
+    "lead": "Агентный цикл чередует решения модели и выполнение инструментов. Результат пополняет контекст следующего решения, пока агент не готов ответить, не требуется человек или не достигнут заданный лимит.",
+    "flow": [
+      "Цель + контекст",
+      "Выбор действия моделью",
+      "Выполнение приложением",
+      "Результат → новый контекст ↺"
+    ],
+    "sections": [
+      [
+        "Один цикл по шагам",
+        "Передайте цель, инструкции, схемы инструментов и текущий контекст. Модель может запросить вызов инструмента. Код приложения проверяет и выполняет запрос, возвращает результат. Следующий вызов модели использует обновлённый контекст для выбора действия или ответа. Запрос инструмента сам по себе не выполняет действие."
+      ],
+      [
+        "Пример: возврат денег за заказ",
+        "Модель выбирает lookup_order. Приложение возвращает purchase_age_days: 45. Модель оценивает этот факт вместе с правилами возврата и исключениями. Она может выбрать process_refund, если условия выполнены, или escalate_to_human, если нужна проверка. Сами по себе 45 дней не определяют право на возврат."
+      ],
+      [
+        "Контроль действий в коде приложения",
+        "Перед возвратом приложение проверяет полномочия, правила и необходимые согласования. Для повторяемых запросов используйте идемпотентность. Выбор инструмента моделью не даёт разрешения на выполнение. Передача человеку — осознанный следующий шаг, а не поломка цикла."
+      ],
+      [
+        "Условия остановки",
+        "Остановитесь, когда цель достигнута, нужны данные или согласование человека либо исчерпан лимит шагов, времени или стоимости. Обрабатывайте ошибки инструментов явно и избегайте бесконечного повторения бесполезного действия."
+      ],
+      [
+        "Один агент или несколько",
+        "Этот цикл работает и без подагентов. В многоагентной системе координатор и каждый специалист могут выполнять собственные циклы. Делегирование определяет исполнителя, а цикл — способ продвижения работы."
+      ]
+    ],
+    "diagrams": [
+      {
+        "file": "tool-use-refund-ru.svg",
+        "title": "Инструменты: от запроса к действию",
+        "caption": "Модель выбирает инструмент, приложение выполняет его и возвращает результат в контекст. Затем модель выбирает следующий шаг с учётом правил."
+      }
+    ],
+    "related": [
+      "multi-agent-architecture",
+      "tools",
+      "recovery"
+    ]
+  }
+}

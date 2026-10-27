@@ -11,7 +11,7 @@ python3 build.py
 python3 -m http.server 8080 --directory dist
 ```
 
-Open http://localhost:8080. The root opens the English guide by default, without requiring JavaScript. RU remains available through the language switch. The knowledge catalog is at `catalog.html`. Output: `dist/` (20 HTML pages). The build validates chapter IDs and every local link/asset. Pages work without JavaScript; JS enhances topic filtering and the mobile menu.
+Open http://localhost:8080. The root opens the English guide by default, without requiring JavaScript. RU remains available through the language switch. The knowledge catalog is at `catalog.html`. Output: `dist/` (24 HTML pages). The build validates chapter IDs and every local link/asset. Pages work without JavaScript; JS enhances topic filtering and the mobile menu.
 
 ## Add or revise a topic
 

@@ -1,1 +1,13 @@
-["overview", "coordinator", "context", "recovery", "tools", "delegation", "research", "uncertainty", "provenance"]
+[
+  "overview",
+  "multi-agent-architecture",
+  "agentic-loop",
+  "coordinator",
+  "context",
+  "recovery",
+  "tools",
+  "delegation",
+  "research",
+  "uncertainty",
+  "provenance"
+]
