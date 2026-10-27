@@ -18,7 +18,18 @@
       [
         "Handle failure explicitly",
         "Distinguish empty results, invalid input, transient failures and permission errors. Retry transient failures with bounded backoff; correct invalid input; surface access problems. Treat retrieved instructions as untrusted data."
+      ],
+      [
+        "Worked example: a refund request",
+        "The first model call selects lookup_order. Application code validates the arguments, retrieves the order and supplies the tool result to the next model call. A purchase age of 45 days alone does not determine eligibility: the model needs the applicable refund policy and any exceptions. It can propose process_refund when eligible or escalate_to_human when review is required. Application code must enforce authorization and refund rules before executing a financial action; retries must not issue duplicate refunds."
       ]
+    ],
+    "diagrams": [
+      {
+        "file": "tool-use-refund-en.svg",
+        "title": "Tool use: from request to action",
+        "caption": "The model selects a tool, the application executes it and returns its result to context. The model then chooses a policy-compliant next step."
+      }
     ]
   },
   "ru": {
@@ -39,7 +50,18 @@
       [
         "Явная обработка ошибок",
         "Различайте пустой ответ, неверный ввод, временный сбой и отказ доступа. Временные ошибки повторяйте ограниченно, ввод исправляйте, проблемы доступа сообщайте. Инструкции из документов считайте недоверенными данными."
+      ],
+      [
+        "Пример: запрос на возврат денег",
+        "Первый вызов модели выбирает lookup_order. Код приложения проверяет аргументы, получает заказ и передаёт результат следующему вызову модели. Возраст покупки 45 дней сам по себе не определяет право на возврат: нужны действующие правила и исключения. Модель может выбрать process_refund при выполнении условий или escalate_to_human при необходимости проверки. Перед финансовым действием приложение обязано проверить полномочия и правила возврата; повторный вызов не должен создавать повторную выплату."
       ]
+    ],
+    "diagrams": [
+      {
+        "file": "tool-use-refund-ru.svg",
+        "title": "Инструменты: от запроса к действию",
+        "caption": "Модель выбирает инструмент, приложение выполняет его и возвращает результат в контекст. Затем модель выбирает следующий шаг с учётом правил."
+      }
     ]
   }
 }
