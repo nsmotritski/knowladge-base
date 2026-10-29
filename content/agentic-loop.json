@@ -42,7 +42,8 @@
     "related": [
       "multi-agent-architecture",
       "tools",
-      "recovery"
+      "recovery",
+      "authorization-handoff"
     ]
   },
   "ru": {
@@ -87,7 +88,8 @@
     "related": [
       "multi-agent-architecture",
       "tools",
-      "recovery"
+      "recovery",
+      "authorization-handoff"
     ]
   }
 }

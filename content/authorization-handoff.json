@@ -1,0 +1,87 @@
+{
+  "id": "authorization-handoff",
+  "en": {
+    "title": "Authorization & Human Handoff",
+    "heading": "Recognize the boundary. Hand over the evidence.",
+    "lead": "An agent can gather facts without having authority to approve every action. When a billing dispute requires manager approval, stop the restricted action and transfer a structured case to an authorized person.",
+    "flow": [
+      "Gather facts",
+      "Check authority",
+      "Prepare handoff",
+      "Human decision"
+    ],
+    "sections": [
+      [
+        "Separate knowledge from permission",
+        "get_customer and lookup_order retrieve relevant information within the caller’s permitted scope. Knowing that a pricing error occurred does not authorize the agent to issue a refund or change a charge. Application code must enforce access and approval requirements before any restricted action."
+      ],
+      [
+        "Make the handoff actionable",
+        "Pass the customer ID, order ID, identified pricing error, reason for escalation and recommended action. Include supporting evidence and unresolved uncertainties, and distinguish confirmed facts from suspected errors. Send only information necessary for the review."
+      ],
+      [
+        "Escalation is not approval",
+        "escalate_to_human routes the case; it does not approve the recommendation. The manager may approve, reject or request more information. Preserve the review status and decision in durable state so the workflow can resume without repeating actions."
+      ],
+      [
+        "Avoid bypassing the boundary",
+        "Do not split a restricted action into smaller actions to evade a limit, or retry it through another tool. Before executing an approved change, validate that the approval applies to this case and action; prevent duplicate execution on retries."
+      ]
+    ],
+    "related": [
+      "agentic-loop",
+      "tools",
+      "context",
+      "recovery"
+    ],
+    "diagrams": [
+      {
+        "file": "authorization-handoff-en.svg",
+        "title": "From authorization boundary to human review",
+        "caption": "Read-only tools gather the facts; a restricted action waits for a manager’s decision."
+      }
+    ]
+  },
+  "ru": {
+    "title": "Полномочия и передача человеку",
+    "heading": "Учитывайте полномочия. Передавайте доказательства.",
+    "lead": "Агент может собирать факты, не имея права согласовывать любое действие. Если спор по оплате требует решения менеджера, остановите ограниченное действие и передайте человеку структурированные материалы.",
+    "flow": [
+      "Собрать факты",
+      "Проверить полномочия",
+      "Подготовить передачу",
+      "Решение человека"
+    ],
+    "sections": [
+      [
+        "Знание не равно разрешению",
+        "get_customer и lookup_order получают нужные сведения в пределах разрешённого доступа. Обнаруженная ошибка в цене сама по себе не даёт агенту права вернуть деньги или изменить списание. Код приложения проверяет доступ и необходимые согласования до ограниченного действия."
+      ],
+      [
+        "Передавайте готовый к рассмотрению случай",
+        "Укажите ID клиента, ID заказа, найденную ошибку в цене, причину эскалации и рекомендуемое действие. Приложите доказательства и оставшиеся неопределённости; отделяйте подтверждённые факты от предполагаемых ошибок. Передавайте только необходимые для проверки сведения."
+      ],
+      [
+        "Эскалация не означает согласование",
+        "escalate_to_human направляет материалы человеку, но не утверждает рекомендацию. Менеджер может согласовать её, отклонить или запросить уточнения. Сохраняйте статус проверки и решение в устойчивом состоянии, чтобы продолжить процесс без повторных действий."
+      ],
+      [
+        "Не обходите границу полномочий",
+        "Не разбивайте ограниченное действие на мелкие для обхода лимита и не повторяйте его другим инструментом. Перед исполнением проверьте, что согласование относится к этому случаю и действию; исключите дубли при повторах."
+      ]
+    ],
+    "related": [
+      "agentic-loop",
+      "tools",
+      "context",
+      "recovery"
+    ],
+    "diagrams": [
+      {
+        "file": "authorization-handoff-ru.svg",
+        "title": "От границы полномочий к проверке человеком",
+        "caption": "Инструменты чтения собирают факты; ограниченное действие ожидает решения менеджера."
+      }
+    ]
+  }
+}
